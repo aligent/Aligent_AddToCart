@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <catalog_product_view>
+        <reference name="before_body_end">
+            <block type="core/template" name="aligent.addtocart.script" template="aligent/addtocart/script.phtml"/>
+        </reference>
+    </catalog_product_view>
+</layout>
