@@ -3,4 +3,4 @@ app/design/frontend/base/default/layout/aligent/addtocart.xml app/design/fronten
 app/design/frontend/base/default/template/aligent/addtocart app/design/frontend/base/default/template/aligent/addtocart
 app/etc/modules/Aligent_AddToCart.xml app/etc/modules/Aligent_AddToCart.xml
 source/frontend/base/default/js/partials/_addToCart.js source/frontend/base/default/js/partials/_addToCart.js
-source/frontend/base/default/js/partials/_addToCartExtensions.js source/frontend/base/default/js/partials/_addToCartExtensions.js
+source/frontend/base/default/js/partials/_addToCartExtensions.js source/frontend/base/default/js/partials/_addToCartExtensions.js.sample
