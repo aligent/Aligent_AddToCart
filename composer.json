@@ -1,0 +1,10 @@
+{
+  "name":"aligent/addtocart",
+  "type":"magento-module",
+  "license":"OSL-3.0",
+  "homepage":"https://github.com/aligent/Aligent_AddToCart",
+  "description":"Prototype based, Ajax Add to Cart functionality for all product types.",
+  "require":{
+      "magento-hackathon/magento-composer-installer":"*",
+  }
+}
