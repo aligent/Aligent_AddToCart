@@ -5,6 +5,6 @@
   "homepage":"https://github.com/aligent/Aligent_AddToCart",
   "description":"Prototype based, Ajax Add to Cart functionality for all product types.",
   "require":{
-      "magento-hackathon/magento-composer-installer":"*",
+      "magento-hackathon/magento-composer-installer":"*"
   }
 }
