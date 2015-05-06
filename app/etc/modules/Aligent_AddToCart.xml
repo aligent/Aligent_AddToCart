@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Aligent_AddToCart>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Aligent_AddToCart>
+    </modules>
+</config>
