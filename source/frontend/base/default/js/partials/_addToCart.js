@@ -17,7 +17,7 @@ AligentAjaxAddToCartEnabler = Class.create({
         Event.on(this.container, 'click', this.selector, this.onSubmit.bind(this));
     },
 
-    onSubmit: function(ev) {
+    onSubmit: function(ev, overrideForm) {
         ev.preventDefault();
 
         this.ev = ev;
@@ -37,8 +37,11 @@ AligentAjaxAddToCartEnabler = Class.create({
 
         this.clickedSubmit.addClassName('loading');
 
-
-        this.form = ev.target.up('form');
+        if (typeof overrideForm == 'undefined') {
+            this.form = ev.target.up('form');
+        } else {
+            this.form = overrideForm;
+        }
 
         // The event target might override the URL to submit the request to.
         // DYOC does this for quickshop for example.
