@@ -1,7 +1,7 @@
 <script>
     document.observe("dom:loaded", function() {
         $$('#product_addtocart_form .btn-cart').each(function (el) {
-            el.writeAttribute('onclick',null);
+            el.writeAttribute('onclick','');
         });
 
         Aligent.ajaxAddToCart = new AligentAjaxAddToCartEnabler('.btn-cart', $('product_addtocart_form'));
