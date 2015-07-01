@@ -14,7 +14,7 @@ AligentAjaxAddToCartEnabler = Class.create({
     },
 
     bindEvents: function() {
-        Event.on(this.container, 'click', this.selector, this.onSubmit.bind(this));
+        this.container.select(this.selector).invoke('observe', 'click', this.onSubmit.bind(this));
     },
 
     onSubmit: function(ev, dummy, overrideForm) {
