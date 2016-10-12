@@ -3,8 +3,10 @@ AligentAjaxAddToCartEnabler = Class.create({
     ev: null,
     clickedSubmit: null,
 
-    initialize: function(selector, container) {
+    initialize: function(selector, container, overrideForm) {
         this.selector = selector;
+        this.overrideForm = overrideForm ? overrideForm : false;
+
         if (typeof container != 'undefined') {
             this.container = container;
         } else {
@@ -17,7 +19,7 @@ AligentAjaxAddToCartEnabler = Class.create({
         this.container.select(this.selector).invoke('observe', 'click', this.onSubmit.bind(this));
     },
 
-    onSubmit: function(ev, dummy, overrideForm) {
+    onSubmit: function(ev) {
         ev.preventDefault();
 
         this.ev = ev;
@@ -37,10 +39,10 @@ AligentAjaxAddToCartEnabler = Class.create({
 
         this.clickedSubmit.addClassName('loading');
 
-        if (typeof overrideForm == 'undefined') {
+        if (!this.overrideForm) {
             this.form = ev.target.up('form');
         } else {
-            this.form = overrideForm;
+            this.form = this.overrideForm;
         }
 
         // The event target might override the URL to submit the request to.
